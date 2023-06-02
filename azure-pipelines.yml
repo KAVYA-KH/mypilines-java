@@ -20,11 +20,11 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
 - task: JenkinsQueueJob@2
   inputs:
-    serverEndpoint: 'jenkins01'
+    serverEndpoint: 'jenkinsDemo'
     jobName: 'pipeline1'
     captureConsole: true
     capturePipeline: true
     isParameterizedJob: false
-
