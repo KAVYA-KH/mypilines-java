@@ -23,8 +23,8 @@ steps:
 
 - task: JenkinsQueueJob@2
   inputs:
-    serverEndpoint: 'jenkinsDemo'
-    jobName: 'pipeline1'
+    serverEndpoint: 'jenkinsSC01_Demo'
+    jobName: 'demo'
     captureConsole: true
     capturePipeline: true
     isParameterizedJob: false
